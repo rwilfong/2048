@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2048 + AI Solver</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="app">
+    <div id="header">
+      <div id="title">2048</div>
+      <div id="scores">
+        <div class="score-box">
+          <div class="slabel">Score</div>
+          <div class="sval" id="score">0</div>
+        </div>
+        <div class="score-box">
+          <div class="slabel">Best</div>
+          <div class="sval" id="best">0</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="board"></div>
+
+    <div class="controls">
+      <button class="btn-new" onclick="newGame()">New game</button>
+      <button class="btn-ai" id="ai-btn" onclick="toggleAI()">AI: play</button>
+    </div>
+
+    <div class="settings-row">
+      <label>Speed:</label>
+      <input type="range" id="speed" min="50" max="800" step="50" value="300" oninput="updateSpeed()" />
+      <span id="speed-val">300ms</span>
+    </div>
+
+    <div class="settings-row">
+      <label>AI depth:</label>
+      <input type="range" id="depth" min="2" max="6" step="1" value="4" oninput="updateDepth()" />
+      <span id="depth-val">4</span>
+    </div>
+
+    <div id="status">Press arrow keys or hit <strong>AI: play</strong> to watch it solve.</div>
+  </div>
+
+  <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>
