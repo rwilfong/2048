@@ -1,7 +1,7 @@
 # 2048
 Working on a few builds of 2048. 
 
-## Build 1: 2048 + AI Solver (Flask)
+## Build 1: 2048 + AI Solver (Flask app)
 
 A browser-based 2048 game with a built-in [Expectimax AI](https://github.com/cczhong11/2048-ai) solver that can be ran via Flask.
 
@@ -54,8 +54,8 @@ Each board position is scored with a heuristic combining four factors:
 | Smoothness | 11 | Adjacent tiles are close in value |
 | Corner bias | ~1.5 | Big tile stays anchored in a corner |
 
-At **depth 4** (default) the AI reliably reaches **512–1024** and often hits **2048**.
-At **depth 5–6** it hits 2048 more consistently but thinks a little longer per move.
+At **depth 4** (default) the AI reliably reaches **512-1024** and often hits **2048**.
+At **depth 5-6** it hits 2048 more consistently but thinks a little longer per move.
 
 ---
 
