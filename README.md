@@ -3,7 +3,7 @@ Working on a few builds of 2048.
 
 ## Build 1: 2048 + AI Solver (Flask)
 
-A browser-based 2048 game with a built-in [Expectimax AI](https://github.com/cczhong11/2048-ai) solver, that can be ran via Flask.
+A browser-based 2048 game with a built-in [Expectimax AI](https://github.com/cczhong11/2048-ai) solver that can be ran via Flask.
 
 ### Setup
 
@@ -29,11 +29,11 @@ http://127.0.0.1:5000
 
 ### How to play
 
-- **Arrow keys** — move tiles manually
-- **AI: play** — let the AI solve it automatically
-- **AI: stop** — pause the AI and take over
-- **Speed slider** — 50ms (fast) to 800ms (slow, easy to follow)
-- **AI depth slider** — higher = smarter but slower (depth 4 is the sweet spot)
+- **Arrow keys** - move tiles manually
+- **AI: play** - let the AI solve it automatically
+- **AI: stop** - pause the AI and take over
+- **Speed slider** - 50ms (fast) to 800ms (slow, easy to follow)
+- **AI depth slider** - higher = smarter but slower (depth 4 is the sweet spot)
 
 ---
 
