@@ -4,7 +4,7 @@ Working on a few builds of 2048.
 ## Build 1: 2048 + AI Solver (Flask app)
 
 A browser-based 2048 game with a built-in [Expectimax AI](https://github.com/cczhong11/2048-ai) solver that can be ran via Flask.
-This build is currently live, hosted on [Render](https://two048-wi6s.onrender.com)!
+This build is currently live, hosted on [Render](https://two048-wi6s.onrender.com)! It might take up to a minute to build and deploy.
 
 ### Setup
 
@@ -42,8 +42,8 @@ http://127.0.0.1:5000
 
 The solver uses **Expectimax search**, the standard algorithm for 2048:
 
-- **Max nodes** — the AI picks the direction with the highest expected score
-- **Chance nodes** — the algorithm averages over random tile spawns
+- **Max nodes** - the AI picks the direction with the highest expected score
+- **Chance nodes** - the algorithm averages over random tile spawns
   (90% chance of a `2`, 10% chance of a `4`)
 
 Each board position is scored with a heuristic combining four factors:
