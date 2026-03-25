@@ -4,6 +4,7 @@ Working on a few builds of 2048.
 ## Build 1: 2048 + AI Solver (Flask app)
 
 A browser-based 2048 game with a built-in [Expectimax AI](https://github.com/cczhong11/2048-ai) solver that can be ran via Flask.
+This build is currently live, hosted on [Render](https://two048-wi6s.onrender.com)!
 
 ### Setup
 
